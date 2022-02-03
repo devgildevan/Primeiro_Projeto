@@ -5,65 +5,61 @@
         <title>Pagina Web</title>
         <link href="./css/style.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    
     </head>
 
-    <body>
-        <section>
-            <div class="circle"></div>
-                <header> 
-                        <a href="#"><img src="./assets/logo.png" class="logo"></a>
-                            
-                        <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">What's New</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul> 
+        <body>
+                <section>
+                        <div class="circle"></div>
+                        <header> 
+                                <a href="#"><img src="./assets/logo.png" class="logo"></a>
+                                    
+                                <ul class="menu">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Menu</a></li>
+                                    <li><a href="">What's New</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul> 
 
-                </header>
-                    <div class="main">
-                        <div class="textBox">
-                                <h2>It's not just Coffee <br>it's <span>Starbusck</span></h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed tempor eleifend lorem id rhoncus.
-                                    Sed ultricies metus sit amet metus mattis rutrum.
-                                    Pellentesque dolor tellus, porta sed mi non, posuere accumsan orci.<br>Proin efficitur lectus in tempus tempus.<br>
-                                    Mauris molestie eros ac sapien molestie, et tempor lacus sollicitudin.
-                                </p>
-                                <a href="#">Learn More</a>
-                         </div>
+                        </header>
+                            <div class="main">
+                                <div class="textBox">
+                                        <h2>It's not just Coffee <br>it's <span>Starbusck</span></h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed tempor eleifend lorem id rhoncus.
+                                            Sed ultricies metus sit amet metus mattis rutrum.
+                                            Pellentesque dolor tellus, porta sed mi non, posuere accumsan orci.<br>Proin efficitur lectus in tempus tempus.<br>
+                                            Mauris molestie eros ac sapien molestie, et tempor lacus sollicitudin.
+                                        </p>
+                                        <a href="#">Learn More</a>
+                                </div>
 
-                            <div class="imgBox">
-                                <img src="./assets/img1.png" class="starbucks">
+                                    <div class="imgBox">
+                                        <img src="./assets/img1.png" class="starbucks">
+                                    </div>
+
                             </div>
+                                    <ul class="drinks">
+                                        <li><img src="./assets/thumb1.png" onclick="slider('assets/img1.png');changeColor('#017143')"></li>
+                                        <li><img src="./assets/thumb2.png" onclick="slider('assets/img2.png');changeColor('#fa8bcc')"></li>
+                                        <li><img src="./assets/thumb3.png" onclick="slider('assets/img3.png');changeColor('#cf49c9')"></li>
+                                    </ul>
 
-                    </div>
-                            <ul class="drinks">
-                                <li><img src="./assets/thumb1.png" onclick="slider('assets/img1.png');changeColor('#017143')"></li>
-                                <li><img src="./assets/thumb2.png" onclick="slider('assets/img2.png');changeColor('#fa8bcc')"></li>
-                                <li><img src="./assets/thumb3.png" onclick="slider('assets/img3.png');changeColor('#cf49c9')"></li>
-                            </ul>
+                                <ul class="socials">
+                                    <li><a href=""> <img src="./assets/facebook.png"></a></li>
+                                    <li><a href=""> <img src="./assets/instagram.png"></a></li>
+                                    <li><a href=""> <img src="./assets/twitter.png"></a></li>
+                                </ul>
+                </section>
 
-                        <ul class="socials">
-                            <li><a href=""> <img src="./assets/facebook.png"></a></li>
-                            <li><a href=""> <img src="./assets/instagram.png"></a></li>
-                            <li><a href=""> <img src="./assets/twitter.png"></a></li>
-                        </ul>
-            </section>
+                        <script>
+                            function slider(anything){
+                            document.querySelector('.starbucks').src = anything
+                        }
 
-        <script>
-            function slider(anything){
-            document.querySelector('.starbucks').src = anything
-        }
-
-        function changeColor(color){
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-        </script>
-        
-    
-     
-    </body>
+                        function changeColor(color){
+                            const circle = document.querySelector('.circle');
+                            circle.style.background = color;
+                        }
+                        </script>
+        </body>
 </html> 

@@ -18,7 +18,6 @@ section{
     background: #fff;
 }
 
-
 header{
     position: absolute;
     top: 0;
@@ -72,7 +71,9 @@ header ul li a{
     justify-content: space-between;
     align-items: center;
 }
-
+.menu li a{
+    font-size: 14px;
+}
 
 .main .textBox{
     position: relative;
@@ -147,10 +148,12 @@ header ul li a{
     
 }
 
-.drinks li img{
-    max-width: 60px;
+.drinks li  img{
+   max-width:  60px;
 
+   
 }
+
 
 .socials{
     position: absolute;
@@ -164,7 +167,7 @@ header ul li a{
     
 }
 .socials li:hover{
-    transform: translateX(15px);
+    transform: translateX(1px);
     
 }
 .socials li{
@@ -180,28 +183,33 @@ header ul li a{
 }
 
 .circle{
+    opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #017143;
+    background: #04472b;
     clip-path: circle(600px at right 800px);
 }
 
 
+
 @media (max-width:900px){
+
 
     header{
         padding: 20px;
     }
+
     header .logo{
-        position: relative;
-        max-width: 60px;
+        position: relative;      
+        max-width: 65px;
     }
     header ul{
         display: none;
     }
+    
     select{
         padding: 20px 20px 110px;
     }
@@ -220,27 +228,35 @@ header ul li a{
     }
 
     .main .imgBox{
+        
         max-width: 100%;
         justify-content: center;
         margin-top: 50px;
         margin-left: 200px;
 
     }
+    .main.imgBox img{
+        max-width: 250px;
+        margin-bottom: -20px;
+     
+    }
 
-    .main .imgBox img{
-        max-width:300px;
-    }
+  
     .drinks li img{
-        max-width: 60px;
-        margin-top: 50px;
-        margin-right: 200px;
-        margin: -13px;
-        margin-right: -30px;
-        padding: 3mm;
+
+       margin-top: 50px;
+       max-width: 60px;
+       margin-right: 200px;
+       margin: -13px;
+       margin-right: -30px;
+       padding: 3mm;
     }
+    
     .circle{
-        clip-path: circle(400px at center bottom);
+      
+        clip-path: circle(400px at center  bottom);
     }
+    
     .socials{
         background-color: #017143;
         right: 0;
@@ -251,10 +267,10 @@ header ul li a{
        
         position: absolute;
         top: 0;
-        left: 0;
-        padding:  20px 100px;
+        left: 2em;
+        padding:  20px ;
         display: flex;
-        
+        margin-top: 5em;
         
     }
     .menu li{
@@ -273,5 +289,6 @@ header ul li a{
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,));
 
     }
-  
+
+
 }
