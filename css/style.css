@@ -15,7 +15,14 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+   
+   
+}
+.fundo{
+    
+    filter:blur(1px) grayscale(100%);
+    background-size: cover;
+    position: fixed
 }
 
 header{
@@ -27,6 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 header .logo{
     position: relative;
@@ -47,6 +55,7 @@ header ul li a{
         color: #333;
         font-weight: 400;
         text-decoration: none;
+
 }
 .menu li{
     font-size: 20px;
@@ -58,11 +67,16 @@ header ul li a{
     margin:10px;
     height: 50px;
     transition: all 0.5s;
-
 }
+
 .menu li:hover{
     -webkit-filter:  drop-shadow(5px 5px 5px rgba(0,0,0,.5));
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,));
+    background: #51b38a;
+}
+.menu li:active{
+    background: #017143;
+  
 }
 .main{
     position: relative;
@@ -73,6 +87,7 @@ header ul li a{
 }
 .menu li a{
     font-size: 14px;
+    color: white;
 }
 
 .main .textBox{
@@ -81,7 +96,7 @@ header ul li a{
 }
 
 .main .textBox h2{
-    color: #333;
+    color:white;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
@@ -92,7 +107,7 @@ header ul li a{
     font-weight: 900;
 }
 .main .textBox p{
-    color: #333;
+    color:white;
 }
 
 .main .textBox a{
@@ -100,7 +115,7 @@ header ul li a{
     margin-top: 20px;
     padding: 8px 20px;
     background: #017143;
-    color: #fff;
+    color: white;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -216,11 +231,12 @@ header ul li a{
     .main{
         right: 50%;
         flex-direction: column;
-        margin: 100px;
+        margin: 50% 30%;
     }
     .main .textBox h2{
         font-size: 2.5rem;
         margin-bottom: 15px;
+      
     }
     .main .textBox{
         max-width: 100%;
@@ -228,23 +244,26 @@ header ul li a{
     }
 
     .main .imgBox{
-        
+       
         max-width: 100%;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 50%;
         margin-left: 200px;
+        
 
     }
     .main.imgBox img{
         max-width: 250px;
-        margin-bottom: -20px;
-     
+        
+    }
+    div .imgBox img{
+        align-items: center;
+        margin-bottom: -40%;
+        margin-right: -5em;
     }
 
   
     .drinks li img{
-
-       margin-top: 50px;
        max-width: 60px;
        margin-right: 200px;
        margin: -13px;
@@ -267,7 +286,7 @@ header ul li a{
        
         position: absolute;
         top: 0;
-        left: 2em;
+        left: 5em;
         padding:  20px ;
         display: flex;
         margin-top: 5em;
